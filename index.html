@@ -79,18 +79,27 @@
                 </svg>
               </button>
               <form class="modal">
-                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
                 <label>
                   Имя
                   <input type="text" name="name" autofocus />
+                  <svg width="12" height="12">
+                    <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                  </svg>
                 </label>
                 <label>
                   Телефон
                   <input type="tel" name="tel" />
+                  <svg width="13" height="13">
+                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                  </svg>
                 </label>
                 <label>
                   Почта
                   <input type="email" name="email" />
+                  <svg width="15" height="12">
+                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                  </svg>
                 </label>
                 <label>
                   Комментарий
@@ -550,12 +559,16 @@
           </ul>
         </div>
         <div class="email-form">
-          <form name="email" autocomplete="on" >
-            <label>Подпишитесь на рассылку
-              
-              <input type="email" name="email" placeholder="E-mail"/>
-            </label>
-            <button class="btn-mail" type="submit">Подписаться</button>
+          
+           <h2 class="write-mail">Подпишитесь на рассылку</h2> 
+           <form class="mail" name="email" autocomplete="on">
+              <label for="user-mail"></label>
+              <input class="input-mail" id="user-mail" type="email" name="email" placeholder="E-mail"/>
+            <button class="btn-mail" type="submit">Подписаться
+              <svg  class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
