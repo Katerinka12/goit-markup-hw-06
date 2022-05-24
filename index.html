@@ -78,7 +78,30 @@
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
               </button>
-              <form class="modal"></form>
+              <form class="modal">
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <label>
+                  Имя
+                  <input type="text" name="name" autofocus />
+                </label>
+                <label>
+                  Телефон
+                  <input type="tel" name="tel" />
+                </label>
+                <label>
+                  Почта
+                  <input type="email" name="email" />
+                </label>
+                <label>
+                  Комментарий
+                  <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                </label>
+                <label>
+                  <input type="radio" name="agree" value="agree" checked />
+                  Соглашаюсь с рассылкой и принимаю Условия договора
+                </label>
+                <button type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
@@ -525,6 +548,15 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="email-form">
+          <form name="email" autocomplete="on" >
+            <label>Подпишитесь на рассылку
+              
+              <input type="email" name="email" placeholder="E-mail"/>
+            </label>
+            <button class="btn-mail" type="submit">Подписаться</button>
+          </form>
         </div>
       </div>
     </footer>
