@@ -174,7 +174,8 @@ img {
 .modal-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover .modal-btn-icon {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
   fill: #2196f3;
 }
 .form-field {
@@ -204,11 +205,15 @@ img {
 }
 
 .form-item:hover,
-.form-text:hover {
+.form-text:hover,
+.form-item:focus,
+.form-text:focus {
   border: 1px solid #2196f3;
 }
 
-.form-item:hover ~ .form-icon {
+.form-item:hover ~ .form-icon,
+.form-item:focus ~.form-icon
+ {
   fill: #2196f3;
 }
 
@@ -241,11 +246,12 @@ img {
 }
 .form-icon {
   position: absolute;
-  top: 30px;
+  top: 26px;
   left: 12px;
   width: 18px;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .form-text::placeholder {
@@ -307,9 +313,14 @@ img {
 
   color: #ffffff;
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
   border-color: transparent;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:focus, .form-btn:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-btn {
   position: absolute;
