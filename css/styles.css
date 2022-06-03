@@ -127,6 +127,11 @@ img {
   list-style: none;
   text-decoration: none;
 }
+.advantages-list,
+.works-list,
+.team-list {
+  list-style: none;
+  text-decoration: none;
 
 .backdrop {
   position: fixed;
@@ -382,8 +387,8 @@ img {
 }
 .contact__link:hover,
 .contact__link:focus,
-.footer .adress-link:hover,
-.footer .adress-link:focus {
+.adress__link:hover,
+.adress__link:focus {
   color: var(--secondary-text-color);
 }
 
